@@ -22,7 +22,7 @@ local entity = Creator.createEntity({
     Model = "rbxassetid://12262854624", -- Can be GitHub file or rbxassetid
     Speed = 120, -- Percentage, 100 = default Rush speed
     DelayTime = 2, -- Time before starting cycles (seconds)
-    HeightOffset = 1,
+    HeightOffset = 0.5,
     CanKill = false,
     KillRange = 40,
     BreakLights = false,
@@ -96,7 +96,7 @@ entity.Debug.OnEntitySpawned = function(entityTable)
             end
         end
     end
-    wait(7)
+    wait(10)
     
     local player = game.Players.LocalPlayer
     local character = player.Character or player.CharacterAdded:Wait()
@@ -113,7 +113,7 @@ entity.Debug.OnEntitySpawned = function(entityTable)
             end
             lastPosition = currentPosition
         end)
-        wait(0.2)
+        wait(5)
         movementCheck:Disconnect()
         if moving then
             ReplicatedStorage.GameStats["Player_"..player.Name].Total.DeathCause.Value = "Cease"
