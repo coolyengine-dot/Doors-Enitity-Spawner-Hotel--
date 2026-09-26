@@ -1,6 +1,6 @@
 local hints = {
     "You died to Frostbite",
-    "He freezes the room, so leave quick from the room."
+    "He freezes the room, so go quick to the next room."
 }
 
 local rep = game.ReplicatedStorage
@@ -117,6 +117,7 @@ task.spawn(function()
     part.AmbienceFar:Play()
     part.Attachment.Heylois.Enabled = true
     part.Attachment.face.Enabled = true
+    part.Attachment.BlackTrail.Enabled = true
 
     -- [[ THE HEAT DETECTION LOGIC ]]
     task.delay(1.3, function()
@@ -168,7 +169,8 @@ task.spawn(function()
     part.Attachment.Heylois.Enabled = false
     part.Attachment.face.Enabled = false
     part.Despawn:Play()
+    part.Attachment.BlackTrail.Enabled = false
     
-    task.wait(5.6)
+    task.wait(5.5)
     entity:Destroy()
 end)
