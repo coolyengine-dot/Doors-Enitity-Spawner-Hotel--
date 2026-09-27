@@ -7,7 +7,7 @@ wait(0.001) local function GetGitSound(GithubSnd,SoundName)
 	sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
 	return sound
 end			local JumpscareSound = GetGitSound("https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Entities-Sounds/blob/main/MultiMonsterStart.mp3?raw=true","MultiMonsterStart") JumpscareSound.Parent = workspace
-			JumpscareSound.Volume = 10
+			JumpscareSound.Volume = 6.5
 			JumpscareSound:Play()    local Reboundcolor = Instance.new("ColorCorrectionEffect",game.Lighting) game.Debris:AddItem(Reboundcolor,24)
 	Reboundcolor.Name = "spawn"
 	Reboundcolor.TintColor = Color3.fromRGB(80, 0, 0) Reboundcolor.Saturation = 0 Reboundcolor.Contrast = 0.5
