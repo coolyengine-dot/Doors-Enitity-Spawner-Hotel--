@@ -118,7 +118,6 @@ task.spawn(function()
     part.Attachment.Heylois.Enabled = true
     part.Attachment.face.Enabled = true
     part.Attachment.BlackTrail.Enabled = true
-    part.Part.ParticleEmmiter.Enabled = true
 
     -- [[ THE HEAT DETECTION LOGIC ]]
     task.delay(1.3, function()
@@ -171,7 +170,6 @@ task.spawn(function()
     part.Attachment.face.Enabled = false
     part.Despawn:Play()
     part.Attachment.BlackTrail.Enabled = false
-    part.Part.ParticleEmmiter.Enabled = false
     
     task.wait(6)
     entity:Destroy()
