@@ -6,7 +6,7 @@ wait(0.001) local function GetGitSound(GithubSnd,SoundName)
 	local sound=Instance.new("Sound")
 	sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
 	return sound
-end			local JumpscareSound = GetGitSound("https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Entities-Sounds/blob/main/MultimonsterStart.mp3?raw=true","MultiMonsterStart") JumpscareSound.Parent = workspace
+end			local JumpscareSound = GetGitSound("https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Entities-Sounds/blob/main/MultimonsterStart.mp3?raw=true","MultiMonsterBegin") JumpscareSound.Parent = workspace
 			JumpscareSound.Volume = 6.5
 			JumpscareSound:Play()    local Reboundcolor = Instance.new("ColorCorrectionEffect",game.Lighting) game.Debris:AddItem(Reboundcolor,24)
 	Reboundcolor.Name = "spawn"
@@ -20,7 +20,7 @@ end			local JumpscareSound = GetGitSound("https://github.com/fernandesdasilvamar
 		camera.CFrame = camera.CFrame * cf
 	end)
 	camShake:Start()
-	camShake:ShakeOnce(10,10,0.1,3,1,1)
+	camShake:ShakeOnce(10,10,0.1,5,1,1)
 wait(0.001)
 function DEATHMESSAGE(message,who)
 	spawn(function()
@@ -80,7 +80,7 @@ local entity = Creator.createEntity({
 			},
 		},
 	},
-	CustomDialog = {"You died to an entity designated as A-60", "It can appear at any moment, a loud scream will anounce its presence", "When you hear it spawn you must stay out of its reach as soon as possible", "It knows exactly where you are, so hiding in different places will not work..."}
+	CustomDialog = {"You died to an enitity designated as A-60", "It can Appear at any moment, a loud scream will anounce its presence", "When you hear it spawn you must stay out of its reach as soon as possible", "It knows exactly where you are so hiding in different places will not work.."}
 })
 local spawned = true
 
@@ -176,7 +176,7 @@ entity.Debug.OnEntitySpawned = function()
 			local JumpscareSound = GetGitSound("https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Entities-Sounds/blob/main/asixtyScareOmg.mp3?raw=true","asixtyScareOmg") JumpscareSound.Parent = workspace
 			JumpscareSound.Volume = 6
 			JumpscareSound:Play()
-			camShake:ShakeOnce(20,15,0.1,4)
+			camShake:ShakeOnce(15,15,0.1,4)
 			local JumpscareContrast = Instance.new("ColorCorrectionEffect",game.Lighting)
 			game.TweenService:Create(JumpscareContrast,TweenInfo.new(0.5),{Brightness = 0.2,Contrast = 0.2,Saturation = -0.2,TintColor = Color3.fromRGB(255, 0, 4)}):Play()
 			spawn(function()
@@ -185,12 +185,12 @@ entity.Debug.OnEntitySpawned = function()
 				end
 				game.TweenService:Create(monster1,TweenInfo.new(1),{CFrame = Camera.CFrame*CFrame.new(Vector3.new(0,-1.2,450))}):Play()
 			end)
-			wait(0.6) Jumpscaring = false
+			wait(0.5) Jumpscaring = false
 			Gui.JumpscareEnd.Image = monster1:FindFirstChild("Main"):FindFirstChild("Face").Texture
 			game.TweenService:Create(Gui.JumpscareEnd,TweenInfo.new(0.5),{Size = Gui.Full.Size,Position = Gui.Full.Position,Rotation = math.random(-15,15)}):Play()
-			DEATHMESSAGE({"You died to an entity designated as A-60.", "He can appear at any moment, a loud scream will anounce its presence.", "When you hear he spawn you must stay out of its reach as soon as possible.", "He knows exactly where you are, so hiding in different places will not work..."},"MultiMonster")
+			DEATHMESSAGE({"You died to an entity designated as A-60.", "It can appear at any moment, a loud scream will anounce it's presence.", "When you hear it spawn, you must stay out of it's reach as soon as possible.", "It knows exactly where you are, so hiding in different places will not work..."},"MultiMonster")
 			game.TweenService:Create(JumpscareContrast,TweenInfo.new(10),{Brightness = 0,Contrast = 0,Saturation = 0,TintColor = Color3.fromRGB(255, 255, 255)}):Play()
-			Char:FindFirstChildWhichIsA("Humanoid"):TakeDamage(150)
+			Char:FindFirstChildWhichIsA("Humanoid"):TakeDamage(100)
 			wait(0.5)
 			game.TweenService:Create(Gui.JumpscareEnd,TweenInfo.new(0.5),{ImageTransparency = 1}):Play()
 			game.Debris:AddItem(monster1,1)
