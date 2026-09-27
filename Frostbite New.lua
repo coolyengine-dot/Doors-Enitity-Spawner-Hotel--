@@ -51,7 +51,7 @@ G.LoadGithubModel = function(url)
     return nil
 end
 
-local frostURL = "https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Custom-Entities/blob/main/FrostbiteNewUpdate2.txt?raw=true"
+local frostURL = "https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Custom-Entities/blob/main/Frost.txt?raw=true"
 
 task.spawn(function()
     local camera = workspace.CurrentCamera
@@ -118,6 +118,7 @@ task.spawn(function()
     part.Attachment.Heylois.Enabled = true
     part.Attachment.face.Enabled = true
     part.Attachment.BlackTrail.Enabled = true
+    part.Part.ParticleEmmiter.Enabled = true
 
     -- [[ THE HEAT DETECTION LOGIC ]]
     task.delay(1.3, function()
@@ -171,6 +172,6 @@ task.spawn(function()
     part.Despawn:Play()
     part.Attachment.BlackTrail.Enabled = false
     
-    task.wait(5.5)
+    task.wait(6)
     entity:Destroy()
 end)
