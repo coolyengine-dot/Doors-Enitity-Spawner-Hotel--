@@ -171,6 +171,7 @@ task.spawn(function()
     part.Attachment.face.Enabled = false
     part.Despawn:Play()
     part.Attachment.BlackTrail.Enabled = false
+    part.Part.ParticleEmmiter.Enabled = false
     
     task.wait(6)
     entity:Destroy()
