@@ -74,7 +74,7 @@ local function Move()
 	local ReboundMoving = GetGitSound("https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Entities-Sounds/blob/main/ReboundMovingNew.mp3?raw=true","ReboundMovingNew")
 	ReboundMoving.Parent = entity
 	ReboundMoving:Play()
-    ReboundMoving.Volume = 7.5
+    ReboundMoving.Volume = 4
     ReboundMoving.RollOffMode = "LinearSquare"
     ReboundMoving.RollOffMaxDistance = 360
 	entity.CFrame = GetLastRoom().RoomEnd.CFrame
