@@ -71,7 +71,7 @@ local function Move()
 	
 	----------Moving------------
 	local gruh = workspace.CurrentRooms
-	local ReboundMoving = GetGitSound("https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Entities-Sounds/blob/main/ReboundMoving.mp3?raw=true","ReboundMovingNew")
+	local ReboundMoving = GetGitSound("https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Entities-Sounds/blob/main/ReboundMovingNew.mp3?raw=true","ReboundMovingNew")
 	ReboundMoving.Parent = entity
 	ReboundMoving:Play()
     ReboundMoving.Volume = 7
