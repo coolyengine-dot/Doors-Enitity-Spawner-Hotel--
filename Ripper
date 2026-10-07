@@ -3,10 +3,10 @@
 local entityTable = Creator.createEntity({
     CustomName = "Ripper", -- Custom name of your entity
     Model = "https://github.com/fernandesdasilvamariainez-coder/Roblox-Doors-Custom-Entities/blob/main/RipperClassic.txt?raw=true", -- Can be GitHub file or rbxassetid
-    Speed = 250, -- Percentage, 100 = default Rush speed
+    Speed = 600, -- Percentage, 100 = default Rush speed
     DelayTime = 0.5, -- Time before starting cycles (seconds)
     HeightOffset = 1,
-    CanKill = true,
+    CanKill = false,
     KillRange = 10,
     BackwardsMovement = true,
     BreakLights = true,
@@ -15,8 +15,8 @@ local entityTable = Creator.createEntity({
         3, -- Time (seconds)
     },
     Cycles = {
-        Min = 2,
-        Max = 6,
+        Min = 0,
+        Max = 0,
         WaitTime = 0,
     },
     CamShake = {
