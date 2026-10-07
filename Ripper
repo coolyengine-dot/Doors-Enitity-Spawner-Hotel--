@@ -8,7 +8,7 @@ local entityTable = Creator.createEntity({
     HeightOffset = 1,
     CanKill = true,
     KillRange = 10,
-    BackwardsMovement = false,
+    BackwardsMovement = true,
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
