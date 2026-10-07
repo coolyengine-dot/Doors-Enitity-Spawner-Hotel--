@@ -3,13 +3,13 @@
 local entity = Creator.createEntity({
     CustomName = "A-60", -- Custom name of your entity
     Model = "rbxassetid://139692532333823", -- Can be GitHub file or rbxassetid
-    Speed = 220, -- Percentage, 100 = default Rush speed
+    Speed = 390, -- Percentage, 100 = default Rush speed
     DelayTime = 5, -- Time before starting cycles (seconds)
     HeightOffset = -0.5,
     CanKill = false,
     KillRange = 1,
     BreakLights = true,
-    BackwardsMovement = false,
+    BackwardsMovement = true,
     FlickerLights = {
         true, -- Enabled/Disabled
         1.5, -- Time (seconds)
