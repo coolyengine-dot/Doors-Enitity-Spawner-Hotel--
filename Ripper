@@ -15,8 +15,8 @@ local entityTable = Creator.createEntity({
         3, -- Time (seconds)
     },
     Cycles = {
-        Min = 0,
-        Max = 0,
+        Min = 3,
+        Max = 5,
         WaitTime = 0,
     },
     CamShake = {
